@@ -5,6 +5,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 class WardrobeTests {
     private Wardrobe w;
 
@@ -33,9 +35,20 @@ class WardrobeTests {
         assertEquals(59, price);
     }
 
-	@Test
+    @Test
     void testPriceOf75cmElement() {
         int price = w.getPrice(75);
         assertEquals(62, price);
+    }
+
+    @Test
+    void testFillWallWithAll50s() {
+        w.add(50);
+        w.add(50);
+        w.add(50);
+        w.add(50);
+        w.add(50);
+        int wall = w.checkWall();
+        assertEquals(250, wall);
     }
 }
