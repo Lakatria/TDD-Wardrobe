@@ -10,4 +10,10 @@ public class Wardrobe {
     int getSize(){
         return size;
     }
+
+    int getPrice(int size){
+        if (size <= 50)
+            return 59;
+        return 0;
+    }
 }
