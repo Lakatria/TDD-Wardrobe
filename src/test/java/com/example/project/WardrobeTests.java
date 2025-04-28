@@ -11,4 +11,11 @@ class WardrobeTests {
         int size = w.getSize();
         assertEquals(50, size);
     }
+
+    @Test
+    void testSize75() {
+        Wardrobe w = new Wardrobe();
+        int size = w.getSize();
+        assertEquals(75, size);
+    }
 }
