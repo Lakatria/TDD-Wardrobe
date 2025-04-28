@@ -32,4 +32,10 @@ class WardrobeTests {
         int price = w.getPrice(50);
         assertEquals(59, price);
     }
+
+	@Test
+    void testPriceOf75cmElement() {
+        int price = w.getPrice(75);
+        assertEquals(62, price);
+    }
 }
