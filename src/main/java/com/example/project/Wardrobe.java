@@ -1,7 +1,7 @@
+package com.example.project;
+
 public class Wardrobe {
-
-	public int add(int a, int b) {
-		return a + b;
-	}
-
+    int getSize(){
+        return 50;
+    }
 }
