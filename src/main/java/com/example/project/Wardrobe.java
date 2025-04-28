@@ -16,6 +16,10 @@ public class Wardrobe {
             return 59;
         else if (size <= 75)
             return 62;
+        else if (size <= 100)
+            return 90;
+        else if (size <= 120)
+            return 111;
         return 0;
     }
 }
