@@ -28,7 +28,10 @@ public class Wardrobe {
         wall += element;
     }
 
-    int checkWall(){
-        return wall;
+    int checkWall() throws RuntimeException{
+        if (wall == 250)
+            return wall;
+        else
+            throw new RuntimeException("Elements too large for wall.");
     }
 }
